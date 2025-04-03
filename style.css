@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* Estilo geral */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+}
+body
+{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    height: 100vh; /*altura padrão todo espaço da tela*/
+}
+.secundaria /*interface*/
+{
+    max-width: 1280px; /*largura maxima*/
+    margin: 0 auto; /*margen centralizada*/
+}
+.menu-desktop
+{
+    padding: 10px;
+}
+/* Estilo do cabeçario */
+header
+{
+    margin-bottom: 0px;
+    padding: 10px 4%;/* distanciamento */
+}
+header > .secundaria
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a
+{
+    color: #d134348f;
+    text-decoration: none;
+    display: inline-block; /* um do lado do outro*/
+    transition: .1s;
+}
+header a:hover /*mudança de estilo*/
+{
+    color: #eb6f6fa9;
+    transform: scale(1.20);
+}
+header nav ul
+{
+    list-style-type: none;
+}
+header nav ul li
+{
+    display: inline-block;
+    padding: 0 40px;
+    margin-right: 50px;
+}
+.botao button
+{
+    padding: 10px 20px; /*espaçamento interno*/
+    font-size: 18px; /*tamanho de fonte*/
+    font-weight: 600; /*intensidade do peso da fonte*/
+    background-color: #d13434a8; /*cor do botão*/
+    border-radius: 30px; 
+    cursor: pointer;
+    border: 0;
+    margin-left: 50px;
+    transition: .1s;
+}
+.botao-redes button
+{
+    padding: 10px 10px; /*espaçamento interno*/
+    font-size: 15px; /*tamanho de fonte*/
+    font-weight: 600; /*intensidade do peso da fonte*/
+    background-color: #d13434a8; /*cor do botão*/
+    border-radius: 10px; 
+    cursor: pointer;
+    border: 10px;
+    gap: 10px;
+}
+.botao button:hover, form .btn-enviar input:hover
+{
+    box-shadow: 0px 0px 8px #eb6f6f81; /*sombreado*/
+    transform: scale(1.10); /*transição*/
+}
+.parent {
+    position: relative; /* Necessário para referência do posicionamento absoluto */
+}
+.botao-redes 
+{
+    margin-left: 50px; /* Distância da borda direita do contêiner */
+    top: 0;      /* Ajuste vertical, se necessário */
+}
+
+.logo img
+{
+    max-width: 150px;
+    border-radius: 100px;
+    padding: auto;
+    margin-bottom: 10px;
+    margin-left: 26px;
+}
+
+/* Topo do site */
+section .primaria
+{
+    padding: 10px 4%;
+}
+.txt-topo-site h1{
+    color: crimson;
+    font-size: 2.5rem;
+    padding: 5px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1px;
+    margin-left: 22px;
+}
+.txt-topo-site h1 span
+{
+   color: #eb6f6f;
+}
+h2.subtitulo
+{
+    color: crimson;
+    padding: 20px;
+    margin-left: 40px;
+    margin-top: 5px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+h2.sub
+{
+    padding: 30px;
+    color: #eb6f6f;
+    font-size: 35px;
+    font-family: "Antonio", sans-serif;
+    text-align: center;
+}
+.container
+{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    margin: 5px auto;
+}
+.container p
+{
+    background-color:#d13434a8;
+    text-align: justify;
+    padding: 25px;
+    margin-left: 50px;
+    border-radius: 5px;
+    color: black;
+    height: 550px;
+    width: 1050px;
+    font-size: 18px;
+}
+/* Ajuste geral para a imagem do perfil */
+.img-perfil
+{
+    position: relative; /* Adiciona um contexto de posicionamento */
+}
+.foto-perfil
+{
+    border: 1px solid #d13434a8;
+    margin: 50px;
+    border-radius: 2px;
+    margin-right: 50px;
+}
+.container .foto-perfil
+{
+    animation: flutuar 5s ease-in-out infinite alternate;
+    max-width: 250px;
+}
+@keyframes flutuar {
+    0% {
+        transform: translateY(-65px); /* Começa na posição original */
+    }
+    100% {
+        transform: translateY(75px); /* Move para cima */
+    }
+}
+/* Estilo das especialidades */
+.flexivel {
+   text-align: center;
+   display:inline-flex;
+   padding: 20px;
+}
+section.especialidades
+{
+    padding:40px 4%;
+}
+section .flexivel
+{
+    gap: 60px; /*respiro*/
+}
+.especialidades .box
+{
+    color:#eb6f6f;
+    padding: 26px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: 1.s;
+}
+.especialidades .box:hover
+{
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #eb6f6f81;
+}
+.especialidades .box i
+{
+    font-size: 50px;
+    color: #d13434a8;
+    display: flex;
+    padding: 25px; 
+}
+.paragrafo
+{
+color: #eb6f6f98;
+padding: 12px;
+height: 320px; /*altura*/
+width: 300px; /*largura*/
+text-align: justify;
+}
+.especial
+{
+padding: 3px;
+font-size: 25px;
+margin: 15px 0;
+margin: auto;
+background-color:rgba(220, 20, 60, 0.123);
+border-radius: 10px;
+max-width: 200px;
+}
+/* Configuração area social */
+section .area-social
+{
+    padding: 40px 4%;
+}
+.area-social .txt-area-social
+{
+    background-color:#d13434c7;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 7px;
+    font-size: 18px;
+    color: black;
+    height: 295px;
+    width: 924px ; 
+}
+.img-area-social
+{
+    border:1px solid #eb6f6f;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 30px;
+}
+/*estilo do portifolio*/
+section.portifolio
+{
+    padding: 80px 4%;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 20px #eb6f6f10;
+}
+
+.img-port
+{
+    width: 320px;/*largura*/
+    height: 220px;
+    background-color: #eb6f6f;
+    background-size:cover;
+    background-position: 50% 50%;
+    transition: 5s; /*rolagem da imagem*/
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+
+}
+.img-port:hover
+{
+    background-position: 100% 100%;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eb6f6f4d;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(216, 20, 20, 0.651);
+    opacity: 0;
+    transition: 0.5s;
+}
+.overlay:hover
+{
+    opacity: 1;
+    
+}
+/*Seção Formulario*/
+section.formulario
+{
+    padding: 20px 4%;
+}
+form
+{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form input, form textarea
+{
+    width: 100%;
+    background-color:#d13434c7 ;
+    border: 0;
+    outline: 0;
+    margin:auto;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(235, 154, 170);
+    font-size: 18px;
+}
+form textarea
+{
+    resize: none;
+    max-height: 350px;
+}
+form .btn-enviar
+{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input[type = submit]
+{
+   
+    max-width: 100%;
+    background-color: #eb6f6f;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+/*estilo do rodape*/
+footer
+{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 20px #eb6f6f10;
+}
+footer img
+{
+    margin-left: 55px;
+}
+.line-footer
+{
+    padding: 10px 0;
+}
+footer .line-footer p i
+{
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+    color: #eb6f6f;
+}
+footer .line-footer p a
+{
+ color: #fff;
+}
